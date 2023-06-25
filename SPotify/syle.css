@@ -1,0 +1,287 @@
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+*{
+    padding: 0px;
+    margin: 0px;
+}
+nav{    
+    background-color: black;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+}
+nav img{
+    width: 36px;
+    margin: 0px 4px;
+}
+nav li{
+    list-style: none;
+    color: white;
+    margin: 0px 9px;
+}
+.brand{
+    display: flex;
+    align-items: center;
+    font-weight: 900;
+}
+.container::before{
+    content: "";
+    background: url('../images/music3.jpg') no-repeat center center/cover;
+    position: absolute;
+    width: 100%;
+    height: 588px;
+    opacity: 0.8;
+    z-index: -1;
+}
+.container{
+    height: 588px;
+}
+        
+#myProgressBar{
+    width: 800px;
+    cursor: pointer;
+}
+.bottom{
+            
+    background-color: black;
+    position: sticky;
+    bottom: 0px;
+    height: 120px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.icons{
+    margin-top: 9px;
+    cursor: pointer;
+}
+.songItem img{
+    width: 25px;
+    border-radius: 17px;
+    margin-left: 7px;
+}
+.songItem{
+    background-color: rgb(251, 238, 221);
+    border-radius: 19px;
+    width: 600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 13px 0px;
+    margin-left: 48px;
+    padding: 5px 0px;
+}
+.songplaylist{
+    margin-right: 7px;
+}
+#pro{
+    margin-top: 30px;
+}
+.songlist h2{
+    margin-left: 75px;
+    font-weight: 900;
+    padding-top: 30px;
+    font-size: x-large;
+    font-weight: bolder;
+}
+.songlistplay{
+    margin-right: 23px;
+}
+.songItem:hover{
+    background-color: rgb(231, 172, 63);
+            
+}
+.songinfo img{
+    width: 44px;
+    opacity: 0;
+    transition: opacity 1s ease-in;
+}
+.songinfo{
+    position: absolute;
+    left: 56px;
+}
+
+@media (min-width:850px) and (max-width:1100px ){
+    ul li{
+        font-size: small;
+    }
+    nav{
+        position: absolute;
+    }
+    
+   .songlist h2{
+    font-size: 90%;
+   } 
+   .songItem:hover{
+    background-color: rgb(231, 172, 63);
+            
+}
+.songinfo{
+    position: absolute;
+    left: 56px;
+}
+   .songItem{
+    width:360px;
+    display: flex;
+    
+   }
+   .container::before{
+    width: 100%;
+   }
+   
+   .songName{
+    font-size: x-small;
+   }
+   .songlistplay span{
+    font-size: xx-small;
+   }
+   #myProgressBar{
+    width: 250px;
+   }
+   
+   .bottom{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+   }
+   .songItem:hover{
+    background-color: rgb(231, 172, 63);
+            
+}
+   #masterSongName{
+    font-size: x-small;
+   
+   }
+   nav{
+    position: sticky;
+   }
+   .bottom{
+    height: 90px;
+   }
+
+}
+@media (min-width:420px) and (max-width:850px){
+    nav{
+        position: absolute;
+    }
+
+    ul li{
+        font-size: x-small;
+        padding:0px 2px;
+    }
+   .songlist h2{
+    font-size: 90%;
+   } 
+   .songinfo{
+    margin-bottom: 35px;
+    
+    
+}
+   .songItem{
+    width:260px;
+    display: flex;
+    
+   }
+   .container::before{
+    width: 100%;
+   }
+   .icons{
+    margin-top: 28px;
+    cursor: pointer;
+}
+   
+   .songName{
+    font-size: x-small;
+   }
+   .songlistplay span{
+    font-size: xx-small;
+   }
+   
+    .bottom{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+       }
+    
+   #masterSongName{
+    font-size: x-small;
+   }
+   nav{
+    position: sticky;
+   }
+   .bottom{
+    height: 130px;
+   }
+   #myProgressBar{
+    width: 150px;
+   }
+}
+@media (min-width:0px) and (max-width:420px){
+    ul li{
+        font-size: 20%;
+    }
+   .songlist h2{
+    font-size: 60%;
+   } 
+   #myProgressBar{
+    width: 88px;
+    
+
+   }
+   .songItem{
+    width:110px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 4px 10px;
+    
+   }
+   .songItem img{
+    width: 13px;
+   }
+   .songName{
+    font-size: xx-small;
+   }
+   .songlistplay{
+    font-size: xx-small;
+   }
+
+    .bottom{
+        position: sticky;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 68px;
+        
+       }
+   
+
+#masterSongName{
+    font-size: 40%;
+    
+
+
+   }
+   .songinfo{
+    margin-bottom: 20px;
+   }
+   .icons{
+    padding-top: 10px;
+    cursor: pointer;
+    font-size: x-small;
+}
+
+}
+        
+        
